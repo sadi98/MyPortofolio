@@ -1,10 +1,25 @@
+import NavigationBar from "./components/NavigationBar"
+import Bot from "./components/Bot"
+import Hero from "./components/Hero"
+import About from "./components/About"
+import Skills from "./components/Skills"
+import Hireme from "./components/Hireme"
+import Project from "./components/Project"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <NavigationBar/>
+      <Bot/>
+      <Hero/>
+      <About/>
+      <Skills/>
+      <Hireme/>
+      <Project/>
+      <Contact/>
+      <Footer/>
     </>
   )
 }
