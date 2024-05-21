@@ -9,41 +9,9 @@ import project_person from "../assets/images/job.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
+import projects from "../data/projects";
 
 const Project = () => {
-  const projects = [
-    {
-      img: project1,
-      name: "Movie App",
-      github_link: "#",
-      live_link: "#",
-    },
-    {
-      img: project2,
-      name: "Job search Web App",
-      github_link: "#",
-      live_link: "#",
-    },
-    {
-      img: project3,
-      name: "Highking",
-      github_link: "#",
-      live_link: "#",
-    },
-    {
-      img: project4,
-      name: "React Nav",
-      github_link:
-        "#",
-      live_link: "#",
-    },
-    {
-      img: project5,
-      name: "Vue Country",
-      github_link: "#",
-      live_link: "#",
-    },
-  ];
   return (
     <section id="projects" className="py-10 text-white">
       <div className="text-center">
@@ -67,15 +35,12 @@ const Project = () => {
           autoplay={{
             delay: 3000,
           }}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination, Autoplay]}
+          modules={[Autoplay]}
         >
             {projects.map((project_info, i) => (
               <SwiperSlide key={i}>
                 <div className="h-fit w-full p-4 bg-slate-700 rounded-xl">
-                  <img src={project_info.img} alt="" className="rounded-lg" />
+                  <img src={project_info.img} alt="" className="rounded-lg" style={{ height: "150px", width: "100%" }} />
                   <h3 className="text-xl my-4">{project_info.name}</h3>
                   <div className="flex gap-3">
                     <a
