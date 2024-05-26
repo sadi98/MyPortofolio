@@ -41,7 +41,7 @@ const Hero = () => {
               Hello
               <br />
             </span>
-            My Name is <span>Sady Nur Sholeihin</span>
+            My Name is <span>Sadi Nur Sholeihin</span>
           </h1>
           <h4 className='md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-400'>Fullstack Developer</h4>
           <button className='btn-primary mt-8'>Contact Me</button>
