@@ -2,10 +2,30 @@ import React from 'react'
 import SadyNs from '../assets/images/SadyNs.png'
 const Hero = () => {
   const media =[
-    "logo-instagram",
-    "logo-linkedin",
-    "logo-google",
-    "logo-github",
+    {
+      id: 1,
+      name: "Github",
+      icon: "logo-github",
+      link: "https://github.com/sadi98"
+    },
+    {
+      id: 2,
+      name: "Linkedin",
+      icon: "logo-linkedin",
+      link: "https://www.linkedin.com/in/sadyns/"
+    },
+    {
+      id: 3,
+      name: "Instagram",
+      icon: "logo-instagram",
+      link: "https://www.instagram.com/sady_ns/"
+    },
+    {
+      id: 4,
+      name: "WhatsApp",
+      icon: "logo-whatsapp",
+      link: "https://wa.me/6281288130098"
+    },
   ];
   return (
     <section id='home' 
@@ -29,7 +49,9 @@ const Hero = () => {
             {
               media.map((item) => (
                 <div key={item} className='text-gray-400 hover:text-white cursor-pointer'>
-                  <ion-icon name={item}></ion-icon>
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className='hover:text-white'>
+                    <ion-icon name={item.icon}></ion-icon>
+                  </a>
                 </div>
               ))
             }

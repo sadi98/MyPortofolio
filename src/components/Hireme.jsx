@@ -1,6 +1,16 @@
 import React from 'react'
 import myFoto from '../assets/images/sadynurs.png'
 const Hireme = () => {
+  const phoneNumber = '081288130098';
+  const message = `
+  Do you want any work from me?
+  I am available to help you with your projects. Whether you need assistance with development, design, or any other tasks, I am here to provide the support you need. Let's collaborate and bring your ideas to life!
+  `;
+
+  const handleWhatsAppRedirect = () => {
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+  };
   return (
     <section id="hireme" className="py-10 text-white px-3">
       <div className='text-center'>
@@ -17,7 +27,9 @@ const Hireme = () => {
           <p className="lg:text-left text-justify max-w-lg text-sm mt-4 text-gray-200 leading-6">
             I am available to help you with your projects. Whether you need assistance with development, design, or any other tasks, I am here to provide the support you need. Let's collaborate and bring your ideas to life!
           </p>
-          <button className="btn-primary mt-10">Say Hello</button>
+          <button className="btn-primary mt-10" onClick={handleWhatsAppRedirect}>
+            Say Hello
+          </button>
         </div>
         <img
           src={myFoto}

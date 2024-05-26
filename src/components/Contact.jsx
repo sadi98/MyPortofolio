@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { contact } from '../data/contact'
 const Contact = () => {
   const contact_info  = contact
+
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const mailtoLink = `mailto:sadinursholeihin@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+    window.open(mailtoLink, '_blank');
+  };
   return (
     <section id="contact" className="py-10 px-3 text-white">
       <div className="text-center mt-8">
@@ -14,11 +23,24 @@ const Contact = () => {
           className="mt-16 flex md:flex-row flex-col
          gap-6 max-w-5xl bg-gray-800 md:p-6 p-2 rounded-lg mx-auto"
         >
-          <form className="flex flex-col flex-1 gap-5">
-            <input type="text" placeholder="Your Name" />
-            <input type="Email" placeholder="Your Email Address" />
-            <textarea placeholder="Your Message" rows={10}></textarea>
-            <button className="btn-primary w-fit">Send Message</button>
+          <form className="flex flex-col flex-1 gap-5" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="Subject"
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+              className="form-input"
+            />
+            <textarea
+              placeholder="Your Message"
+              rows={10}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              className="form-textarea"
+            />
+            <button type="submit" className="btn-primary w-fit">
+              Send Message
+            </button>
           </form>
           <div className="flex flex-col  gap-7 ">
             {contact_info.map((contact, i) => (

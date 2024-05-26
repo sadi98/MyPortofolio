@@ -43,13 +43,12 @@ const Project = () => {
                   <img src={project_info.img} alt="" className="rounded-lg" style={{ height: "150px", width: "100%" }} />
                   <h3 className="text-xl my-4">{project_info.name}</h3>
                   <div className="flex gap-3">
-                    <a
-                      href={project_info.github_link}
+                    {/* <a href={project_info.github_link}
                       target="_blank"
                       className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
                     >
                       Github
-                    </a>
+                    </a> */}
                     <a
                       href={project_info.live_link}
                       target="_blank"
