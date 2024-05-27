@@ -33,7 +33,7 @@ const Hireme = () => {
         </div>
         <img
           src={myFoto}
-          alt=""
+          alt="sady nur sholeihin"
           className="lg:h-[32rem] h-80 lg:absolute bottom-0 -right-3 object-cover"
         />
       </div>

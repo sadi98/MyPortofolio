@@ -63,7 +63,7 @@ const Project = () => {
           </Swiper>
         </div>
         <div className="lg:block hidden">
-          <img src={project_person} alt="" />
+          <img src={project_person} alt="sady_ns" />
         </div>
       </div>
     </section>
