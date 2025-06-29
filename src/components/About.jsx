@@ -2,8 +2,8 @@ import React from 'react'
 import imageSady from '../assets/images/job.png'
 const About = () => {
   const info = [
-    {text : "Years of Experience", count: "02"},
-    {text : "Projects Completed", count: "27"},
+    {text : "Years of Experience", count: "04"},
+    {text : "Projects Completed", count: "49"},
     {text : "Companies Worked", count: "01"},
   ]
   return (
@@ -17,7 +17,7 @@ const About = () => {
         <div className='p-2'>
           <div className='text-gray-300 my-3'>
             <p className='text-justify leading-7 max-w-lg mx-auto'>
-            I am a seasoned full-stack web developer with a wealth of experience and a proven track record of success. With over 2 years in the industry, I have completed 27 projects, working collaboratively with top-tier companies. My commitment to excellence is unwavering, and I approach each new challenge with passion and enthusiasm. Armed with strong analytical skills and expertise across various domains, I am well-equipped to help you achieve your project objectives. I am confident that our collaboration will deliver mutually beneficial results.
+            I am a seasoned full-stack web developer with a wealth of experience and a proven track record of success. With over 4 years in the industry, I have completed 49 projects, working collaboratively with top-tier companies. My commitment to excellence is unwavering, and I approach each new challenge with passion and enthusiasm. Armed with strong analytical skills and expertise across various domains, I am well-equipped to help you achieve your project objectives. I am confident that our collaboration will deliver mutually beneficial results.
             </p>
             <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-7 mt-10'>
               {info.map((item, index) => (
@@ -32,9 +32,7 @@ const About = () => {
               ))}
             </div>
             <div className="text-center mt-8">
-              <a href="./src/assets/cv.pdf" download>
-                <button className='btn-primary'>Download Cv</button>
-              </a>
+              
             </div>
           </div>
         </div>

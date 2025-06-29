@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Bot = () => {
-  const phoneNumber = '081288130098';
+  const phoneNumber = '6281288130098';
   const message = `
     Hi Sadi Nur Sholeihin!
     I just visited your website and I'm really impressed with your work. I would love to discuss how we can collaborate on some exciting projects. Let's connect and explore the possibilities!

@@ -1,7 +1,7 @@
 import React from 'react'
 import myFoto from '../assets/images/sadynurs.png'
 const Hireme = () => {
-  const phoneNumber = '081288130098';
+  const phoneNumber = '6281288130098';
   const message = `
   Do you want any work from me?
   I am available to help you with your projects. Whether you need assistance with development, design, or any other tasks, I am here to provide the support you need. Let's collaborate and bring your ideas to life!
